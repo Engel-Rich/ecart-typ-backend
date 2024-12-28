@@ -985,7 +985,4 @@
   'Unit updated successfully' => 'Unit updated successfully',
   'Unit deleted successfully' => 'Unit deleted successfully',
   'Sub Category saved successfully' => 'Sub Category saved successfully',
-  'Final Step' => 'Final Step',
-  'Admin setup' => 'Admin setup',
-  'Step 5' => 'Step 5',
 );
