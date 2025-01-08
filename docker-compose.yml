@@ -19,6 +19,7 @@ services:
         build: .
         volumes:
             - ./:/www/html/ecartify
+        container_name: ecartify-backend
         environment:
             - DB_CONNECTION=mysql
             - DB_HOST=mysql
@@ -31,11 +32,12 @@ services:
     adminer:
         image: adminer
         restart: always
+        container_name: adminer-ecartify
         ports:
             - "8084:8080"
     mysql:
         image:                  mysql:8.0.30
-        container_name:         mysql-sa
+        container_name:         mysql-ecartify
         restart:                always
         volumes:
             - ./data_db:/var/lib/mysql
